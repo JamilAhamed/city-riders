@@ -5,17 +5,17 @@ import signUp from "../../images/signUp.jpg";
 import "firebase/auth";
 import "./Login.css";
 import firebase from "firebase/app";
-import { faLock, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
+import {faLock,faEnvelope, faUser} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
+
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 } else {
     firebase.app();
 }
-
 
 const Login = () => {
     const history = useHistory();
