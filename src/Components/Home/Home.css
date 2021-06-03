@@ -13,9 +13,7 @@
     background-size: cover;
     background-position: center;
   }
-*{
-    font-family: 'Comfortaa', cursive;
-}
+
 
 @media(max-width:1400px){
     .category-holder{

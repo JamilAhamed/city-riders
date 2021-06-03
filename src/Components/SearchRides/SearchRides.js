@@ -81,11 +81,8 @@ const SearchRidies = () => {
                     {
                         selectedVehicle?.riders?.map(riders => <RiderCard selectedVehicle={selectedVehicle} riders={riders}   ></RiderCard>)
                     }
-
                 </div>
             }
-
-
             <div className="map">
                 <Map></Map>
             </div>

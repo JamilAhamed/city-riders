@@ -13,8 +13,8 @@ nav {
 }
 
 nav ul li a:hover {
-    color: #17a2b8;
-    border-bottom: 2px solid teal;
+    color: orange;
+    border-bottom: 2px solid orange;
 }
 
 .navLinks {
@@ -40,7 +40,7 @@ nav ul li a:hover {
 
 a {
     font-size: 20px;
-    color: black;
+    color: orangered;
     text-decoration: none;
 }
 
@@ -59,10 +59,10 @@ a {
 }
 
 .userName {
-    color: teal;
+    color:orangered;
     font-weight: 500;
-    border-top: 2px solid teal;
-    border-bottom: 2px solid teal;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
     padding: 5px;
 }
 
@@ -76,6 +76,6 @@ a {
     nav {
         display: flex;
         align-items: flex-start;
-        height: 25vh;
+        height: 30vh;
     }
 }

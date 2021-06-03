@@ -5,7 +5,7 @@ import signUp from "../../images/signUp.jpg";
 import "firebase/auth";
 import "./Login.css";
 import firebase from "firebase/app";
-import {faLock,faEnvelope, faUser} from '@fortawesome/free-solid-svg-icons'
+import { faLock, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../App';
@@ -46,7 +46,7 @@ const Login = () => {
             });
 
     }
-// Facebook SignIn Handler
+    // Facebook SignIn Handler
     const handleFbSignIn = () => {
         var provider = new firebase.auth.FacebookAuthProvider();
         firebase
@@ -86,7 +86,7 @@ const Login = () => {
 
 
 
-// Handaling Value change of Input fields
+    // Handaling Value change of Input fields
     const handleChange = (event) => {
         let isFieldValid = true;
         let isPasswordMatched = false;
@@ -130,14 +130,13 @@ const Login = () => {
     const handleSubmit = (event) => {
         if (newUser && user.email && user.password && user.name) {
             firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
-            
-                .then(res => { 
+
+                .then(res => {
                     const { email, displayName } = res.user;
                     const newUserInfo = { email, name: displayName };
                     newUserInfo.name = user.name;
                     newUserInfo.error = '';
                     setLoggedInUser(newUserInfo);
-                    // console.log(res.user,"user info of signup");
                     alert('SignUp successfully completed 😍')
                     updateUserName(user.name);
                     history.replace(from);
@@ -148,11 +147,11 @@ const Login = () => {
                     newUserInfo.error = error.message;
                     setLoggedInUser(newUserInfo);
                     alert(`${error.message}`)
-                    
+
                 });
         }
         if (!newUser && user.email && user.password) {
-            console.log("cliked on login");
+            console.log("clicked on login");
             firebase.auth().signInWithEmailAndPassword(user.email, user.password)
                 .then(res => {
 
@@ -181,9 +180,9 @@ const Login = () => {
         user.updateProfile({
             displayName: name
         }).then(function () {
-            console.log("succefully");
+            console.log("successfully");
         }).catch(function (error) {
-            console.log("error occured",error);
+            console.log("error occurred", error);
         });
     }
     return (

@@ -2,12 +2,10 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
-import CatargoryCard from '../CatagoryCard/CatargoryCard';
+import CatagoryCard from '../CatagoryCard/CatagoryCard';
 import "./Home.css";
 
-
 const Home = () => {
-
     const [vehicles, setVehicles] = useState([]);
     useEffect(() => {
         const url = "https://api.npoint.io/6b5a64f78b7d4393011c"
@@ -23,12 +21,9 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="category-holder">
-
                 {
-                    vehicles.map(vehicle => <CatargoryCard vehicle={vehicle} key={vehicle.key} clickHandler={clickHandler}></CatargoryCard>)
+                    vehicles.map(vehicle => <CatagoryCard vehicle={vehicle} key={vehicle.key} clickHandler={clickHandler}></CatagoryCard>)
                 }
-
-
             </div>
         </div>
     );

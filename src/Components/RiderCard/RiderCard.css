@@ -7,8 +7,8 @@
     grid-template-columns: 3fr 1fr;
     box-shadow: 5px 5px 10px gray;
     border-radius: 10px;
-    border-left: 2px solid teal;
-    border-right: 1px solid teal;
+    border-left: 2px solid orange;
+    border-right: 1px solid orange;
 }
 
 .rider-info{
