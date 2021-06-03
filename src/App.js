@@ -10,6 +10,7 @@ import SearchRidies from './Components/SearchRides/SearchRides';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from "./Components/Footer/Footer";
 
 export const UserContext = createContext();
 function App() {
@@ -39,6 +40,7 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer></Footer>
       </Router>
     </UserContext.Provider>
   );
