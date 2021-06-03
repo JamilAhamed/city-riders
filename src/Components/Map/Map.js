@@ -1,4 +1,4 @@
-import { GoogleMap, useJsApiLoader } from 'google-maps-react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import React from 'react';
 
 const Map = () => {
@@ -12,6 +12,7 @@ const Map = () => {
         lat: 23.6850,
         lng: 90.3563
       };
+      
     const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyAaybxaCvlmTHQByE8I-teuLo4k-lmS5zs"
@@ -37,7 +38,6 @@ const Map = () => {
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
-        { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
   ) : <></>
