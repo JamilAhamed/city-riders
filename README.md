@@ -5,13 +5,13 @@ Projects GitHub LInk-https://github.com/JamilAhamed/city-riders
 
 Project Feature's -
 
-* Multiple Transport in a City.
-* Ride from one Location to another Location.
-* Transport Fare.
-* Available Transport in your Location.
-* Location Map
-*Adding Map according to Location.
-*Login and SignUp form validation.
+ 1. Multiple Transport in a City.1
+2. Ride from one Location to another Location.
+3. Transport Fare.
+4. Available Transport in your Location.
+5. Location Map
+6. Adding Map according to Location.
+7. Login and SignUp form validation.
     *Login*
         * Wrong Password.
         * Wrong Mail Address.
@@ -19,9 +19,9 @@ Project Feature's -
         * Password Length less then 6 or 8.
         * Same Mail already Exist.
 
-*Showing the error message.
+8. Showing the error message.
 
-*Fully Responsive for all devices.
+9. Fully Responsive for all devices.
 
 Thank You.
 
